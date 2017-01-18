@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat_alternatesXLt';
+    src: url('../fonts/montserratalternates-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/montserratalternates-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+col-1 {
+  width: 8.3333333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25.0%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50.0%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75.0%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100.0%;
+}
+
+h1,h2,p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'montserratlight';
+}
+
+.center{
+  max-width: 1148px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+  h2{
+    font-family: 'montserratbold';
+    font-size: 24px;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    div{
+      margin-left: 40px;
+      color: #989898;
+      font-size: 16px;
+    }
+  }
+}
+
+.sliderWrap{
+  position: relative;
+  overflow: hidden;
+  .cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: hsla(33, 100%, 87%, 0.7);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sliderPager{
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    z-index: 3;
+    div{
+      width: 10px;
+      height: 10px;
+      margin-top: 40%;
+      border-radius: 100%;
+      border: 1px solid #000000;
+      cursor: pointer;
+      &:first-child{
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.slider{
+  list-style-type: none;
+  display: flex;
+  li{
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+  }
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.invisibleSlide{
+  display: none;
+}
+
+.sliderBox{
+  text-align: center;
+  width: 100%;
+  h2{
+    font-family: 'montserratbold';
+    font-size: 40px;
+    margin: 2% 0;
+  }
+  .underline{
+    margin: 0 auto;
+    border-top: 2px solid #000000;
+    width: 50px;
+  }
+  p, .gitBut{
+    font-family:'montserrat_alternatesXLt';
+  }
+  p{
+    font-size: 24px;
+    margin: 2% 0;
+  }
+  .gitBut{
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 18px;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-top: 3%;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+section.whatWeDo{
+  .headingBig{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'montserrat_alternatesXLt';
+    color: #000000;
+    margin: 8% 0;
+  }
+  .instalationArticle{
+    display: flex;
+    margin: 8% 0;
+    .txtContainer{
+      padding-right: 55px;
+      button{
+        background-color: #ffffff;
+        border: 1px solid #d8d8d8;
+        border-radius: 20px;
+        padding: 12px 25px;
+        outline: none;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 20%;
+      }
+    }
+    .imgContainer{
+      background-image: url(../images/7MM-4-webDONE.jpg);
+      /*340px x 1100px;*/
+      width: 50%;
+      /*float: left;*/
+      height: 0;
+      background-size: 100% auto;
+      background-position: top;
+      padding-bottom: 50%;
+      /*(50% * 485px) / 344px;*/
+      background-repeat: no-repeat;
+      position: relative;
+      .grayCover{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: background-color 0.5s ease;
+        background-color: hsla(0°, 0%, 90%, 0.5);
+        z-index: 1;
+        &:hover{
+          background-color: hsla(0°, 0%, 90%, 0);
+        }
+      }
+    }
+    img{
+      display: block;
+      max-width: 100%;
+    }
+    h2{
+      color: #000000;
+      &:first-child{
+        font-size: 34px;
+      }
+      &:nth-child(2){
+        font-size: 45px;
+        font-family: 'montserratbold';
+        position: relative;
+        display: inline-block;
+        &:hover:before{
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+        &:before{
+          content: " ";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -10px;
+          left: 0;
+          background-color: #000;
+          // visibility: hidden;
+          -webkit-transform: scaleX(.2);
+          transform: scaleX(.2);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+    }
+    .installationTxtContent{
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 30px;
+      color: #656565;
+    }
+  }
+
+  .kitchenArticle{
+    display: flex;
+    .txtContainer{
+      padding-left: 55px;
+      button{
+        background-color: #ffffff;
+        border: 1px solid #d8d8d8;
+        border-radius: 20px;
+        padding: 12px 25px;
+        outline: none;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 20%;
+      }
+    }
+    .imgContainer{
+      background-image: url(../images/creative-kitchen-lightingDONE.jpg);
+      /*340px x 1100px;*/
+      width: 50%;
+      /*float: left;*/
+      height: 0;
+      background-size: 100% auto;
+      background-position: top;
+      padding-bottom: 50%;
+      /*(50% * 485px) / 344px;*/
+      background-repeat: no-repeat;
+      position: relative;
+      .grayCover{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: background-color 0.5s ease;
+        background-color: hsla(0°, 0%, 90%, 0.5);
+        z-index: 1;
+        &:hover{
+          background-color: hsla(0°, 0%, 90%, 0); 
+        }
+      }
+    }
+    img{
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    h2{
+      color: #000000;
+      &:first-child{
+        font-size: 34px;
+      }
+      &:nth-child(2){
+        font-size: 45px;
+        font-family: 'montserratbold';
+        position: relative;
+        display: inline-block;
+        &:hover:before{
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+        &:before{
+          content: " ";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -10px;
+          left: 0;
+          background-color: #000;
+          // visibility: hidden;
+          -webkit-transform: scaleX(.2);
+          transform: scaleX(.2);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+    }
+    .installationTxtContent{
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 30px;
+      color: #656565;
+      // width: 80%
+    }
+  }
+  .printDesignArticle{
+    display: flex;
+    .txtContainer{
+      padding-left: 55px;
+      button{
+        background-color: #ffffff;
+        border: 1px solid #d8d8d8;
+        border-radius: 20px;
+        padding: 12px 25px;
+        outline: none;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 20%;
+      }
+    }
+    .imgContainer{
+      background-image: url(../images/graphic_print_design_inspiration_9DONE.jpg);
+      /*340px x 1100px;*/
+      width: 50%;
+      /*float: left;*/
+      height: 0;
+      background-size: 100% auto;
+      background-position: top;
+      padding-bottom: 50%;
+      /*(50% * 485px) / 344px;*/
+      background-repeat: no-repeat;
+      position: relative;
+      .grayCover{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: background-color 0.5s ease;
+        background-color: hsla(0°, 0%, 90%, 0.5);
+        z-index: 1;
+        &:hover{
+          background-color: hsla(0°, 0%, 90%, 0);
+        }
+      }
+    }
+    img{
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    h2{
+      color: #000000;
+      &:first-child{
+        font-size: 34px;
+      }
+      &:nth-child(2){
+        font-size: 45px;
+        font-family: 'montserratbold';
+        position: relative;
+        display: inline-block;
+        &:hover:before{
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+        &:before{
+          content: " ";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -10px;
+          left: 0;
+          background-color: #000;
+          // visibility: hidden;
+          -webkit-transform: scaleX(.2);
+          transform: scaleX(.2);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+    }
+    .installationTxtContent{
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 30px;
+      color: #656565;
+      // width: 80%
+    }
+  }
+}

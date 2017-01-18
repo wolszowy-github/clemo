@@ -1,2 +1,2 @@
 # clemo
-ree PSD into a webpage. Still in development.  
+Free PSD into a webpage. Still in development.  
