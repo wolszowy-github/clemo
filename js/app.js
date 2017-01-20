@@ -63,4 +63,25 @@ function slider(){
   }
 
   slider();
+
+  function gallery(){
+    var photosOnPage = $('.galleryCover');
+    var fullscreen = $('.fullViewport');
+    var closeSign = fullscreen.find('svg');
+
+    photosOnPage.on('click', function(){
+      var imgSource = $(this).prev().attr('src');
+      fullscreen.find('img').attr('src', imgSource);
+      fullscreen.fadeIn();
+    })
+
+    closeSign.on('click', function(){
+      fullscreen.fadeOut();
+    })
+
+
+  }
+
+  gallery();
+
 });
